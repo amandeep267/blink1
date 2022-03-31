@@ -5,7 +5,7 @@
 
 module.exports = {
     testEnvironment: "jsdom",
-    coverageDirectory: "coverage",
+   
     collectCoverage: true,
     collectCoverageFrom: ["src/**/*.{js,jsx}", "!src/**/*stories.{js,jsx}"],
     setupFiles: ["./src/SetupTests.js"],
@@ -17,6 +17,7 @@ module.exports = {
       "<rootDir>/src/assets",
       "<rootDir>/src/utils/commandCentermockData.js",
     ],
+     coverageDirectory: "coverage",
     testPathIgnorePatterns: [
       "<rootDir>/node_modules/",
       "<rootDir>/coverage",
